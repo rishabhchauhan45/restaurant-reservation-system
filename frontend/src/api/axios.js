@@ -32,8 +32,8 @@ API.interceptors.response.use(
         !window.location.pathname.includes('/register')
       ) {
         window.location.href = '/login';
-      }
-    }
+      };
+    };
     return Promise.reject(error);
   }
 );
