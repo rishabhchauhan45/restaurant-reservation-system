@@ -17,10 +17,10 @@ const LoadingSpinner = ({ fullScreen = false, size = 'md' }) => {
         <div className="flex flex-col items-center gap-4">
           {spinner}
           <p className="text-dark-400 text-sm animate-pulse-soft">Loading...</p>
-        </div>
+        </div>;
       </div>
     );
-  }
+  };
 
   return (
     <div className="flex items-center justify-center py-12">
@@ -29,4 +29,4 @@ const LoadingSpinner = ({ fullScreen = false, size = 'md' }) => {
   );
 };
 
-export default LoadingSpinner;
+export default LoadingSpinner
