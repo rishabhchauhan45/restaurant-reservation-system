@@ -45,14 +45,16 @@ export const AuthProvider = ({ children }) => {
     setToken(data.token);
     setUser(data.user);
     return data.user;
-  };
+  }
+
+
 
   const logout = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
     setToken(null);
     setUser(null);
-  };
+  }
 
   return (
     <AuthContext.Provider
@@ -70,5 +72,5 @@ export const AuthProvider = ({ children }) => {
     >
       {children}
     </AuthContext.Provider>
-  );
+  )
 };
