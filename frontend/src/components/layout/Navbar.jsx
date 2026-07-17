@@ -24,6 +24,7 @@ const Navbar = () => {
     navigate('/login');
     setIsOpen(false);
   };
+  // navar changed //
 
   const isActive = (path) => location.pathname === path;
 
@@ -61,11 +62,10 @@ const Navbar = () => {
                 <Link
                   key={to}
                   to={to}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${
-                    isActive(to)
-                      ? 'bg-primary-500/10 text-primary-400 border border-primary-500/20'
-                      : 'text-dark-400 hover:text-dark-200 hover:bg-dark-800/50'
-                  }`}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${isActive(to)
+                    ? 'bg-primary-500/10 text-primary-400 border border-primary-500/20'
+                    : 'text-dark-400 hover:text-dark-200 hover:bg-dark-800/50'
+                    }`}
                 >
                   <Icon className="w-4 h-4" />
                   {label}
@@ -100,11 +100,10 @@ const Navbar = () => {
               <>
                 <Link
                   to="/login"
-                  className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${
-                    isActive('/login')
-                      ? 'text-primary-400 bg-primary-500/10'
-                      : 'text-dark-400 hover:text-dark-200'
-                  }`}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${isActive('/login')
+                    ? 'text-primary-400 bg-primary-500/10'
+                    : 'text-dark-400 hover:text-dark-200'
+                    }`}
                 >
                   <HiOutlineLogin className="w-4 h-4" />
                   Login
@@ -152,11 +151,10 @@ const Navbar = () => {
                       key={to}
                       to={to}
                       onClick={() => setIsOpen(false)}
-                      className={`flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium transition-all ${
-                        isActive(to)
-                          ? 'bg-primary-500/10 text-primary-400'
-                          : 'text-dark-400 hover:text-dark-200 hover:bg-dark-800/50'
-                      }`}
+                      className={`flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium transition-all ${isActive(to)
+                        ? 'bg-primary-500/10 text-primary-400'
+                        : 'text-dark-400 hover:text-dark-200 hover:bg-dark-800/50'
+                        }`}
                     >
                       <Icon className="w-5 h-5" />
                       {label}
