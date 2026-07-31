@@ -27,6 +27,6 @@ const LoadingSpinner = ({ fullScreen = false, size = 'md' }) => {
       {spinner}
     </div>
   );
-};
+}
 
 export default LoadingSpinner
