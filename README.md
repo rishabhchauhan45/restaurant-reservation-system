@@ -324,3 +324,19 @@ The smart table assignment algorithm:
 ## 📄 License
 
 This project is open-source and available under the [MIT License](LICENSE).
+
+
+
+
+terminal run command for this project 
+mongodb cluster connect url
+
+cd frontend
+npm run dev
+
+
+second terminal 
+cd backend 
+npm run dev
+started server
+
