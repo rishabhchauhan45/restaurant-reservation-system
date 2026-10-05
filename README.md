@@ -246,7 +246,7 @@ The smart table assignment algorithm:
 - Frontend: `ProtectedRoute` component checks auth + role before rendering
 - Backend: `protect` middleware verifies JWT, `authorize(role)` middleware checks role
 
----
+-
 
 ## 🚢 Deployment Steps
 
