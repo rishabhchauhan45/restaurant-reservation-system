@@ -302,7 +302,7 @@ The smart table assignment algorithm:
 6. **Time zone handling** — dates are stored as strings without timezone context
 7. **No rate limiting** — API endpoints don't have request rate limiting
 
----
+
 
 ## 🔮 Future Improvements
 
